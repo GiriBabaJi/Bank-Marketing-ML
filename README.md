@@ -212,47 +212,35 @@ XGBoost (Ensemble Boosting Model)
 
 
 
-\## 4️⃣ Model Performance Comparison
+ 4️⃣ Model Performance Comparison
 
 
 
-| ML Model Name | Accuracy | AUC | Precision | Recall | F1 Score | MCC |
-
-|---------------|----------|------|-----------|--------|----------|------|
-
-| Logistic Regression | 0.9158 | 0.9423 | 0.7053 | 0.4332 | 0.5367 | 0.5110 |
-
-| Decision Tree | 0.8940 | 0.7427 | 0.5286 | 0.5474 | 0.5379 | 0.4781 |
-
-| KNN | 0.9009 | 0.8346 | 0.6053 | 0.3470 | 0.4411 | 0.4094 |
-
-| Naive Bayes | 0.7476 | 0.8547 | 0.2866 | 0.8330 | 0.4265 | 0.3839 |
-
-| Random Forest | 0.9127 | 0.9469 | 0.7802 | 0.3136 | 0.4473 | 0.4598 |
-
-| XGBoost | 0.9177 | 0.9487 | 0.6555 | 0.5679 | 0.6085 | 0.5646 |
+| ML Model Name       | Accuracy | AUC    | Precision | Recall  | F1 Score | MCC    |
+|----------------------|----------|--------|-----------|---------|----------|--------|
+| Logistic Regression  | 0.9158   | 0.9423 | 0.7053    | 0.4332  | 0.5367   | 0.5110 |
+| Decision Tree        | 0.8940   | 0.7427 | 0.5286    | 0.5474  | 0.5379   | 0.4781 |
+| KNN                  | 0.9009   | 0.8346 | 0.6053    | 0.3470  | 0.4411   | 0.4094 |
+| Naive Bayes          | 0.7476   | 0.8547 | 0.2866    | 0.8330  | 0.4265   | 0.3839 |
+| Random Forest        | 0.9127   | 0.9469 | 0.7802    | 0.3136  | 0.4473   | 0.4598 |
+| XGBoost              | 0.9177   | 0.9487 | 0.6555    | 0.5679  | 0.6085   | 0.5646 |
 
 
 
-\## 5️⃣ Observations on Model Performance
+
+5️⃣ Observations on Model Performance
 
 
 
 | ML Model | Observation about Model Performance |
-
 |-----------|--------------------------------------|
-
 | Logistic Regression | Logistic Regression delivered strong and stable performance with high AUC (0.9423) and good precision (0.7053). However, recall (0.4332) is moderate, indicating conservative positive predictions. |
-
 | Decision Tree | Decision Tree achieved balanced precision and recall (~0.53–0.55). However, its lower AUC (0.7427) suggests weaker generalization compared to ensemble models. |
-
 | KNN | KNN showed reasonable accuracy but relatively low recall (0.3470), which reduced its F1 Score. High-dimensional one-hot encoded features likely affected its distance-based calculations. |
-
 | Naive Bayes | Naive Bayes achieved very high recall (0.8330) but extremely low precision (0.2866), indicating many false positives. This imbalance reduced overall accuracy and MCC. |
-
 | Random Forest | Random Forest achieved the highest precision (0.7802) but very low recall (0.3136), meaning it predicted fewer positive cases. While AUC is high (0.9469), its F1 score is limited due to recall imbalance. |
-
 | XGBoost | XGBoost achieved the best overall performance with the highest AUC (0.9487), highest F1 Score (0.6085), and highest MCC (0.5646). It provides the best balance between precision and recall among all models. |
+
 
 
 
@@ -265,6 +253,7 @@ XGBoost (Ensemble Boosting Model)
 
 
 Overall, ensemble methods outperformed individual classifiers. Although Random Forest achieved very high precision, its low recall reduced its overall effectiveness. XGBoost emerged as the most reliable model due to its superior balance across AUC, F1 Score, and MCC, making it the most suitable model for this classification task.
+
 
 
 
